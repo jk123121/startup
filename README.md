@@ -6,3 +6,5 @@ change again from gitHub
 third change from github
 
 from VSCode
+
+I learned how to merge the conflicts. The GitLens extension is very useful.
