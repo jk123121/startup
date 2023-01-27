@@ -6,4 +6,4 @@ League of Legends is a widely popular game that lets you build a team with your 
 
 Design:
 
-![alt text] (https://media.discordapp.net/attachments/741862388554268754/1068558086052253736/20230127_084750.jpg?width=810&height=874)
+![alt text](https://media.discordapp.net/attachments/741862388554268754/1068558086052253736/20230127_084750.jpg?width=810&height=874)
