@@ -15,3 +15,8 @@ Key features:
 Design:
 
 ![alt text](https://github.com/jk123121/startup/blob/main/Design.jpg?width=810&height=874)
+
+
+Website IP: 18.116.251.169
+
+command: ssh -i key/[keyfile] ubuntu@18.116.251.169
