@@ -22,3 +22,5 @@ Website IP: 18.116.251.169
 command: ssh -i key/[keyfile] ubuntu@18.116.251.169
 
 Website: joonim.link
+
+Website now secure
