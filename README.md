@@ -24,3 +24,5 @@ command: ssh -i key/[keyfile] ubuntu@18.116.251.169
 Website: joonim.link
 
 Website now secure
+
+I learned that <p> and <div> have different size blocks.
