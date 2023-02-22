@@ -26,3 +26,5 @@ Website: joonim.link
 Website now secure
 
 I learned that <p> and <div> have different size blocks.
+
+Using <div> to group things together makes things easier
