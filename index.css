@@ -49,3 +49,18 @@ main
 {
     xbackground-color: red;
 }
+
+.lobby-container
+{
+
+}
+
+.player-lobby
+{
+    border: solid white medium;
+    border-radius: 5%;
+    margin: 2em;
+    background-color: grey;
+    height: 10vh;
+    width: calc(100vw - 100px);
+}
