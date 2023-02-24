@@ -14,15 +14,26 @@
         crossorigin="anonymous">
 </head>
 <body class="bg-dark text-light">
-    <header>
-        <nav class="">
-
+    <header class="container-fluid">
+        
+        <nav class="navbar fixed-top navbar-dark">
+            <menu class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lobby.html">Lobby</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charSelect.html">Character Select</a>
+                </li>
+            </menu>
         </nav>
     </header>
 
     <main class="container-fluid text-center">
         <div class="container-fluid main-content justify-content-center align-items-center">
-            <div style="font-size: 3em; font-weight: bold">Team Forger</div>
+            <div style="font-size: 3em; font-weight: bold"><a class="navbar-brand" href="index.html">Team Forger<sup>&#8482</sup></a></div>
             <form method="get" action="lobby.html">
                 <div class="container-fluid justify-content-center" style="width: 300px; padding: 10px">
                     <input type="text" id="username" placeholder="Username"/>

@@ -10,6 +10,19 @@ header
     flex: 0 50px;
 }
 
+menu
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row !important;
+    list-style: none;
+}
+
+menu .nav-item
+{
+    padding: 0 0.3em;
+}
+
 footer
 {
     flex: 0 30px;
