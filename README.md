@@ -25,6 +25,8 @@ Website: joonim.link
 
 Website now secure
 
-I learned that <p> and <div> have different size blocks.
+I learned that p and div have different size blocks.
 
-Using <div> to group things together makes things easier
+Using div to group things together makes things easier
+
+Learned more how to modify main to make my startup look better
