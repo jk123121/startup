@@ -30,3 +30,5 @@ I learned that p and div have different size blocks.
 Using div to group things together makes things easier
 
 Learned more how to modify main to make my startup look better
+
+learned to check ID more so the js can be integrated correctly
