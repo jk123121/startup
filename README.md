@@ -34,3 +34,5 @@ Learned more how to modify main to make my startup look better
 learned to check ID more so the js can be integrated correctly
 
 Learned how to separate front and back end using express
+
+Learned that I might have to restart/save pm2 after deployment
