@@ -38,3 +38,5 @@ Learned how to separate front and back end using express
 Learned that I might have to restart/save pm2 after deployment
 
 I learned how authorization cookies work!
+
+Learned about websockets and how to use it to make a chat. I want to use this for my startup
