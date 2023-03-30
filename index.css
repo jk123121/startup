@@ -7,7 +7,7 @@ body
 
 header
 {
-    flex: 0 50px;
+    flex: 0 75px;
 }
 
 menu
@@ -28,7 +28,7 @@ menu .nav-item
     font-size: 2em;
     font-weight: bold;
     padding-left: 0.3em;
-    padding-top: 0.1em;
+    padding-top: 0.4em;
 }
 
 footer
@@ -38,29 +38,37 @@ footer
 
 main
 {
-    flex: 1 calc(100vh - 80px);
+    flex: 1 calc(100vh - 105px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-
-.main-content
-{
-    xbackground-color: red;
-}
-
-.lobby-container
-{
-
+    background-image: url("https://wallpaperaccess.com/full/3320668.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .player-lobby
 {
-    border: solid white medium;
-    border-radius: 5%;
+    xborder: solid white medium;
+    border-radius: 10px;
     margin: 2em;
-    background-color: grey;
+    background-color: rgb(31, 31, 31);
     height: 10vh;
-    width: calc(100vw - 100px);
+    xwidth: calc(100vw - 100px);
+    width: 30vw;
+}
+
+#mainObject
+{
+    background-color: rgb(39, 39, 39);
+    width: 20vw;
+    height: 20vh;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#allPlayers
+{
+    justify-content: center;
 }
