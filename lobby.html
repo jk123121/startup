@@ -36,19 +36,305 @@
     <main id="allPlayers" class="container-fluid">
         <div class="lobby-container">
             <div class="row player-lobby">
-                Player 1
+                <div class="col lobbyContent">
+                    Player: <span class="player-name"></span>
+                </div>
+                <div class="col lobbyContent">
+                    <form>
+                        <label for="roles">
+                            Role:
+                        </label>
+                        <select name="allRoles" class="form-select form-select-sm" id="roles">
+                            <option selected>Select role</option>
+                            <option value="top">Top</option>
+                            <option value="jungle">Jungle</option>
+                            <option value="mid">Mid</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent">
+                    <form method="get" class="championForm">
+                        <label for="champions">
+                            Champion:
+                        </label>
+                        <select name="allChamps" class="form-select form-select-sm" id="roles" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                            <option selected>Select champion</option>
+                                <optgroup label="Top laners">
+                                    <option value="Aatrox" onclick="insertChampion('#champID1', this.value)">Aatrox</option>
+                                    <option value="Darius" onclick="insertChampion('#champID1', this.value)">Darius</option>
+                                    <option value="Garen" onclick="insertChampion('#champID1', this.value)">Garen</option>
+                                </optgroup>
+
+                                <optgroup label="Junglers">
+                                    <option value="Ekko" onclick="insertChampion('#champID1', this.value)">Ekko</option>
+                                    <option value="Jarvan" onclick="insertChampion('#champID1', this.value)">Jarvan IV</option>
+                                    <option value="Warwick" onclick="insertChampion('#champID1', this.value)">Warwick</option>
+                                </optgroup>
+
+                                <optgroup label="Mid-lane">
+                                    <option value="Ahri" onclick="insertChampion('#champID1', this.value)">Ahri</option>
+                                    <option value="Lux" onclick="insertChampion('#champID1', this.value)">Lux</option>
+                                    <option value="Zed" onclick="insertChampion('#champID1', this.value)">Zed</option>
+                                </optgroup>
+
+                                <optgroup label="Bottom-lane">
+                                    <option value="Ashe" onclick="insertChampion('#champID1', this.value)">Ashe</option>
+                                    <option value="Caitlyn" onclick="insertChampion('#champID1', this.value)">Caitlyn</option>
+                                    <option value="Ezreal" onclick="insertChampion('#champID1', this.value)">Ezreal</option>
+                                </optgroup>
+
+                                <optgroup label="Support">
+                                    <option value="Alistar" onclick="insertChampion('#champID1', this.value)">Alistar</option>
+                                    <option value="Janna" onclick="insertChampion('#champID1', this.value)">Janna</option>
+                                    <option value="Soraka" onclick="insertChampion('#champID1', this.value)">Soraka</option>
+                                </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent" id="champID1"></div>
+            </div>
+            
+            <div class="row player-lobby">
+                <div class="col lobbyContent">
+                    Player: 2
+                </div>
+                <div class="col lobbyContent">
+                    <form>
+                        <label for="roles">
+                            Role:
+                        </label>
+                        <select name="allRoles" class="form-select form-select-sm" id="roles">
+                            <option selected>Select role</option>
+                            <option value="top">Top</option>
+                            <option value="jungle">Jungle</option>
+                            <option value="mid">Mid</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent">
+                    <form method="get" class="championForm">
+                        <label for="champions">
+                            Champion:
+                        </label>
+                        <select name="allChamps" class="form-select form-select-sm" id="roles" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                            <option selected>Select champion</option>
+                                <optgroup label="Top laners">
+                                    <option value="Aatrox" onclick="insertChampion('#champID2', this.value)">Aatrox</option>
+                                    <option value="Darius" onclick="insertChampion('#champID2', this.value)">Darius</option>
+                                    <option value="Garen" onclick="insertChampion('#champID2', this.value)">Garen</option>
+                                </optgroup>
+
+                                <optgroup label="Junglers">
+                                    <option value="Ekko" onclick="insertChampion('#champID2', this.value)">Ekko</option>
+                                    <option value="Jarvan" onclick="insertChampion('#champID2', this.value)">Jarvan IV</option>
+                                    <option value="Warwick" onclick="insertChampion('#champID2', this.value)">Warwick</option>
+                                </optgroup>
+
+                                <optgroup label="Mid-lane">
+                                    <option value="Ahri" onclick="insertChampion('#champID2', this.value)">Ahri</option>
+                                    <option value="Lux" onclick="insertChampion('#champID2', this.value)">Lux</option>
+                                    <option value="Zed" onclick="insertChampion('#champID2', this.value)">Zed</option>
+                                </optgroup>
+
+                                <optgroup label="Bottom-lane">
+                                    <option value="Ashe" onclick="insertChampion('#champID2', this.value)">Ashe</option>
+                                    <option value="Caitlyn" onclick="insertChampion('#champID2', this.value)">Caitlyn</option>
+                                    <option value="Ezreal" onclick="insertChampion('#champID2', this.value)">Ezreal</option>
+                                </optgroup>
+
+                                <optgroup label="Support">
+                                    <option value="Alistar" onclick="insertChampion('#champID2', this.value)">Alistar</option>
+                                    <option value="Janna" onclick="insertChampion('#champID2', this.value)">Janna</option>
+                                    <option value="Soraka" onclick="insertChampion('#champID2', this.value)">Soraka</option>
+                                </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent" id="champID2"></div>
             </div>
             <div class="row player-lobby">
-                Player 2
+                <div class="col lobbyContent">
+                    Player: 3
+                </div>
+                <div class="col lobbyContent">
+                    <form>
+                        <label for="roles">
+                            Role:
+                        </label>
+                        <select name="allRoles" class="form-select form-select-sm" id="roles">
+                            <option selected>Select role</option>
+                            <option value="top">Top</option>
+                            <option value="jungle">Jungle</option>
+                            <option value="mid">Mid</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent">
+                    <form method="get" class="championForm">
+                        <label for="champions">
+                            Champion:
+                        </label>
+                        <select name="allChamps" class="form-select form-select-sm" id="roles" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                            <option selected>Select champion</option>
+                                <optgroup label="Top laners">
+                                    <option value="Aatrox" onclick="insertChampion('#champID3', this.value)">Aatrox</option>
+                                    <option value="Darius" onclick="insertChampion('#champID3', this.value)">Darius</option>
+                                    <option value="Garen" onclick="insertChampion('#champID3', this.value)">Garen</option>
+                                </optgroup>
+
+                                <optgroup label="Junglers">
+                                    <option value="Ekko" onclick="insertChampion('#champID3', this.value)">Ekko</option>
+                                    <option value="Jarvan" onclick="insertChampion('#champID3', this.value)">Jarvan IV</option>
+                                    <option value="Warwick" onclick="insertChampion('#champID3', this.value)">Warwick</option>
+                                </optgroup>
+
+                                <optgroup label="Mid-lane">
+                                    <option value="Ahri" onclick="insertChampion('#champID3', this.value)">Ahri</option>
+                                    <option value="Lux" onclick="insertChampion('#champID3', this.value)">Lux</option>
+                                    <option value="Zed" onclick="insertChampion('#champID3', this.value)">Zed</option>
+                                </optgroup>
+
+                                <optgroup label="Bottom-lane">
+                                    <option value="Ashe" onclick="insertChampion('#champID3', this.value)">Ashe</option>
+                                    <option value="Caitlyn" onclick="insertChampion('#champID3', this.value)">Caitlyn</option>
+                                    <option value="Ezreal" onclick="insertChampion('#champID3', this.value)">Ezreal</option>
+                                </optgroup>
+
+                                <optgroup label="Support">
+                                    <option value="Alistar" onclick="insertChampion('#champID3', this.value)">Alistar</option>
+                                    <option value="Janna" onclick="insertChampion('#champID3', this.value)">Janna</option>
+                                    <option value="Soraka" onclick="insertChampion('#champID3', this.value)">Soraka</option>
+                                </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent" id="champID3"></div>
             </div>
             <div class="row player-lobby">
-                Player 3
+                <div class="col lobbyContent">
+                    Player: 4
+                </div>
+                <div class="col lobbyContent">
+                    <form>
+                        <label for="roles">
+                            Role:
+                        </label>
+                        <select name="allRoles" class="form-select form-select-sm" id="roles">
+                            <option selected>Select role</option>
+                            <option value="top">Top</option>
+                            <option value="jungle">Jungle</option>
+                            <option value="mid">Mid</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent">
+                    <form method="get" class="championForm">
+                        <label for="champions">
+                            Champion:
+                        </label>
+                        <select name="allChamps" class="form-select form-select-sm" id="roles" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                            <option selected>Select champion</option>
+                                <optgroup label="Top laners">
+                                    <option value="Aatrox" onclick="insertChampion('#champID4', this.value)">Aatrox</option>
+                                    <option value="Darius" onclick="insertChampion('#champID4', this.value)">Darius</option>
+                                    <option value="Garen" onclick="insertChampion('#champID4', this.value)">Garen</option>
+                                </optgroup>
+
+                                <optgroup label="Junglers">
+                                    <option value="Ekko" onclick="insertChampion('#champID4', this.value)">Ekko</option>
+                                    <option value="Jarvan" onclick="insertChampion('#champID4', this.value)">Jarvan IV</option>
+                                    <option value="Warwick" onclick="insertChampion('#champID4', this.value)">Warwick</option>
+                                </optgroup>
+
+                                <optgroup label="Mid-lane">
+                                    <option value="Ahri" onclick="insertChampion('#champID4', this.value)">Ahri</option>
+                                    <option value="Lux" onclick="insertChampion('#champID4', this.value)">Lux</option>
+                                    <option value="Zed" onclick="insertChampion('#champID4', this.value)">Zed</option>
+                                </optgroup>
+
+                                <optgroup label="Bottom-lane">
+                                    <option value="Ashe" onclick="insertChampion('#champID4', this.value)">Ashe</option>
+                                    <option value="Caitlyn" onclick="insertChampion('#champID4', this.value)">Caitlyn</option>
+                                    <option value="Ezreal" onclick="insertChampion('#champID4', this.value)">Ezreal</option>
+                                </optgroup>
+
+                                <optgroup label="Support">
+                                    <option value="Alistar" onclick="insertChampion('#champID4', this.value)">Alistar</option>
+                                    <option value="Janna" onclick="insertChampion('#champID4', this.value)">Janna</option>
+                                    <option value="Soraka" onclick="insertChampion('#champID4', this.value)">Soraka</option>
+                                </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent" id="champID4"></div>
             </div>
             <div class="row player-lobby">
-                Player 4
-            </div>
-            <div class="row player-lobby">
-                Player 5
+                <div class="col lobbyContent">
+                    Player: 5
+                </div>
+                <div class="col lobbyContent">
+                    <form>
+                        <label for="roles">
+                            Role:
+                        </label>
+                        <select name="allRoles" class="form-select form-select-sm" id="roles">
+                            <option selected>Select role</option>
+                            <option value="top">Top</option>
+                            <option value="jungle">Jungle</option>
+                            <option value="mid">Mid</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent">
+                    <form method="get" class="championForm">
+                        <label for="champions">
+                            Champion:
+                        </label>
+                        <select name="allChamps" class="form-select form-select-sm" id="roles" onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                            <option selected>Select champion</option>
+                                <optgroup label="Top laners">
+                                    <option value="Aatrox" onclick="insertChampion('#champID5', this.value)">Aatrox</option>
+                                    <option value="Darius" onclick="insertChampion('#champID5', this.value)">Darius</option>
+                                    <option value="Garen" onclick="insertChampion('#champID5', this.value)">Garen</option>
+                                </optgroup>
+
+                                <optgroup label="Junglers">
+                                    <option value="Ekko" onclick="insertChampion('#champID5', this.value)">Ekko</option>
+                                    <option value="Jarvan" onclick="insertChampion('#champID5', this.value)">Jarvan IV</option>
+                                    <option value="Warwick" onclick="insertChampion('#champID5', this.value)">Warwick</option>
+                                </optgroup>
+
+                                <optgroup label="Mid-lane">
+                                    <option value="Ahri" onclick="insertChampion('#champID5', this.value)">Ahri</option>
+                                    <option value="Lux" onclick="insertChampion('#champID5', this.value)">Lux</option>
+                                    <option value="Zed" onclick="insertChampion('#champID5', this.value)">Zed</option>
+                                </optgroup>
+
+                                <optgroup label="Bottom-lane">
+                                    <option value="Ashe" onclick="insertChampion('#champID5', this.value)">Ashe</option>
+                                    <option value="Caitlyn" onclick="insertChampion('#champID5', this.value)">Caitlyn</option>
+                                    <option value="Ezreal" onclick="insertChampion('#champID5', this.value)">Ezreal</option>
+                                </optgroup>
+
+                                <optgroup label="Support">
+                                    <option value="Alistar" onclick="insertChampion('#champID5', this.value)">Alistar</option>
+                                    <option value="Janna" onclick="insertChampion('#champID5', this.value)">Janna</option>
+                                    <option value="Soraka" onclick="insertChampion('#champID5', this.value)">Soraka</option>
+                                </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <div class="col lobbyContent" id="champID5"></div>
             </div>
         </div>
     </main>
@@ -59,5 +345,7 @@
             <div class="col" style="text-align: end"><a class="text-reset" href="https://github.com/jk123121/startup">Source</a></div>
         </div>
     </footer>
+
+    <script src="lobby.js"></script>
 </body>
 </html>

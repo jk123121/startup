@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Forger</title>
 
+    <script src="login.js"></script>
     <link rel="stylesheet" href="index.css"/>
 
     <link 
@@ -33,16 +34,20 @@
 
     <main class="container-fluid text-center">
         <div id="mainObject" class="container-fluid main-content justify-content-center align-items-center">
-            <div style="font-size: 3em; font-weight: bold"><a class="navbar-brand" href="index.html">Team Forger<sup>&#8482</sup></a></div>
+            <div id="title" ><a class="navbar-brand" href="index.html">Team Forger<sup>&#8482</sup></a></div>
             <form method="get" action="lobby.html">
-                <div class="container-fluid justify-content-center" style="width: 300px; padding: 10px">
-                    <input type="text" id="username" placeholder="Username"/>
+                <div class="forms container-fluid justify-content-center">
+                    <input type="text" id="username" class="form" placeholder="Username"/>
                 </div>
-                <div class="container-fluid justify-content-center" style="width: 300px; padding: 10px">
-                    <input type="text" id="password" placeholder="Password"/>
+
+                <div class="forms container-fluid justify-content-center">
+                    <input type="password" id="password" class="form" placeholder="Password"/>
+                </div>
+
+                <div class="loginButton container-fluid justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-block" onclick="login()"><div class="loginText">Login</div></button>
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Login</button>
             </form>
         </div>
     </main>
